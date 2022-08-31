@@ -1,14 +1,19 @@
+# Library Class
 class Library:
     def __init__(self, bookslist, name):  # Here, name is the library name
         self.booksList = bookslist
         self.name = name
         self.lendDict = {}
 
+
+# Fetch all the available books in the library,
     def displayBooks(self):
         print(f"We have following books in our library: {self.name}")
         for book in self.booksList:
             print(book)
 
+
+# Keep track of borrowed books
     def lendBook(self, book, user):
         if book in booksList:
             if book not in self.lendDict.keys():
@@ -19,6 +24,7 @@ class Library:
         else:
             print("Apologies! We don't have this book in our library")
 
+# add new books
     def addBook(self, book):
         if book in booksList:
             print("Book already exists")
@@ -29,6 +35,7 @@ class Library:
             bookDatabase.write(book)
             print("Book added")
 
+# Update the details based on the books returned.
     def returnBook(self, book):
         if book in self.lendDict.keys():
             self.lendDict.pop(book)
@@ -36,7 +43,7 @@ class Library:
         else:
             print("The book does not exist in the Book Lending Database")
 
-
+# MAIN FUNCTION
 def main():
     while(True):
         print(
@@ -77,7 +84,7 @@ def main():
         else:
             print("Please enter a valid option")
 
-
+# Program execution begins from here with the __main__ condition
 if __name__ == '__main__':
     booksList = []
     databaseName = input("Enter the name of the database file with extension:")
