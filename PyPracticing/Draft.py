@@ -1,2 +1,3 @@
-for i in range(1,5):
-    print(e:=1)
+oi = 'felix'
+
+print(oi.strip()[0])
