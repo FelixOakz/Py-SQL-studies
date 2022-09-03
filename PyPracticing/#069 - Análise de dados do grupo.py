@@ -9,3 +9,14 @@ b) quantos homens cadastrados
 c) quantas Mulheres tem menos de 20 anos.
 
 """
+
+while True:
+    nom = str(input('Nome?: '))
+    id = int(input('Idade?: '))
+    sex = str(input('Sexo?: '))
+    opt = str(input('Deseja continuar?: '))
+
+    if 'S' in opt:
+        #insert conditions ---
+    else:
+        break
