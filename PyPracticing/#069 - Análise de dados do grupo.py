@@ -1,8 +1,7 @@
 maiores = homens = mulhermenor = 0
 while True:
-    nom = str(input('Nome?: ')).strip()
     id = int(input('Idade?: '))
-    sex = str(input('Sexo?: ')).strip().upper()[0]
+    sex = str(input('Sexo? [M/F]: ')).strip().upper()[0]
     if id >= 18:
         maiores += 1
     if sex == 'M':
