@@ -9,7 +9,7 @@ while True:
         homens += 1
     if sex == 'F' and id <= 20:
         mulhermenor += 1
-    opt = str(input('Deseja continuar?[S/N]: ')).strip().upper()[0]
+    opt = str(input('>>> Deseja continuar?[S/N]: ')).strip().upper()[0]
     if opt == 'N':
         break
 print(f'\nDas pessoas entrevistadas: Temos {maiores} maiores de idade,'
