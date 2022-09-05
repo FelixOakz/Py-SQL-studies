@@ -1,23 +1,21 @@
 import mysql.connector
 
-myDB = mysql.connector.connect(
-    host = 'localhost',
-    user = 'root',
-    passwd = 'timemachine',
-    database = 'pythonx')
+try:
+    connection = mysql.connector.connect(host ='localhost',
+                                         user = 'root',
+                                         passwd = 'timemachine',
+                                         database = 'pythonx')
+    cursor = connection.cursor()
 
-myCur = myDB.cursor()
 
-cur.execute('INSERT INTO user VALUES(1516,'
-            'victoria',
-            'vic@gmail.com',
-            'PRO')')
 
-myDB.commit()
+    cursor.execute('insert into user values(4533,'
+                   'roger',
+                   'rogerinho@yahoo.com',
+                   'PRO');
+    ')
 
-cur.execute('SELECT * FROM user')
-result = cur.fetchall()
-for i in result:
-    print(i)
-
-myDB.close()
+    connection.commit()
+    connection.close()
+except error:
+    print('error')
