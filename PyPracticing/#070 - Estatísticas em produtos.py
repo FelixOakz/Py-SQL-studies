@@ -5,12 +5,12 @@ while True:
     preco = int(input('Digite o valor do produto [R$]: '))
     cont += 1
     tot += preco
-        if preco > 1000:
+    if preco > 1000:
         valormil += 1
     if cont == 1 or preco < menor:
         menor = preco
         barato = produto
-     resp = ' '
+    resp = ' '
     while resp not in 'SN':
         resp = str(input('Deseja continuar? [S/N]: ')).strip().upper()[0]
     if resp == 'N':
