@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 def greetUser(event):
     username = inputBox.get()
-    greet['text'] = 'Welcome' + username
+    greet['text'] = 'Welcome ' + username
 
 window= Tk()
 name = Label(window, text='PythonX - Learn Python', bg='white', fg='Blue', font=('Serif', 17))
