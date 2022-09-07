@@ -1,16 +1,29 @@
 from tkinter import *
+from PIL import ImageTk, Image
+from tkinter import messagebox
 
-window= Tk()
-frame = Frame(window)
+def gui():
+    window= Tk()
+    name = Label(window, text='PythonX - Learn Python', bg='white', fg='Blue', font=('Serif', 17))
+    img = Image.open('py.png')
+    logo = ImageTk.PhotoImage(img)
+    image = Label(window, image=logo)
 
-lbl = Label(window, text='gender')
-var = StringVar()
+    frame = Frame(window)
+    username = Label(frame, text='Username', font=('Serif, 13'))
+    inputBox = Entry(frame)
+    button = Button(window, text='Lets Start!')
 
-male = Radiobutton(window, text='Male', variable=var, value='M')
-female = Radiobutton(window, text='Female', variable=var, value='F')
+    name.pack()
+    image.pack()
+    frame.pack()
+    username.pack(side=LEFT)
+    inputBox.pack(side=RIGHT)
+    button.pack(side=BOTTOM)
+    window.mainloop()
 
-lbl.pack()
-male.pack()
-female.pack()
+def showMessage():
+    messagebox.showinfo('PythonX - Learn Python', 'Welcome')
 
-window.mainloop()
+if __name__=='__main__':
+    gui()
