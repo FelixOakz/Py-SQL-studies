@@ -2,28 +2,29 @@ from tkinter import *
 from PIL import ImageTk, Image
 from tkinter import messagebox
 
-def gui():
-    window= Tk()
-    name = Label(window, text='PythonX - Learn Python', bg='white', fg='Blue', font=('Serif', 17))
-    img = Image.open('py.png')
-    logo = ImageTk.PhotoImage(img)
-    image = Label(window, image=logo)
+def greetUser(event):
+    username = inputBox.get()
+    greet['text'] = 'Welcome' + username
 
-    frame = Frame(window)
-    username = Label(frame, text='Username', font=('Serif, 13'))
-    inputBox = Entry(frame)
-    button = Button(window, text='Lets Start!')
+window= Tk()
+name = Label(window, text='PythonX - Learn Python', bg='white', fg='Blue', font=('Serif', 17))
+img = Image.open('py.png')
+logo = ImageTk.PhotoImage(img)
+image = Label(window, image=logo)
 
-    name.pack()
-    image.pack()
-    frame.pack()
-    username.pack(side=LEFT)
-    inputBox.pack(side=RIGHT)
-    button.pack(side=BOTTOM)
-    window.mainloop()
+frame = Frame(window)
+username = Label(frame, text='Username', font=('Serif, 13'))
+inputBox = Entry(frame)
+button = Button(window, text='Lets Start!')
+button.bind('<Button-1>', greetUser)
+greet = Label(window)
 
-def showMessage():
-    messagebox.showinfo('PythonX - Learn Python', 'Welcome')
+name.pack()
+image.pack()
+frame.pack()
+username.pack(side=LEFT)
+inputBox.pack(side=RIGHT)
+button.pack()
+greet.pack()
 
-if __name__=='__main__':
-    gui()
+window.mainloop()
