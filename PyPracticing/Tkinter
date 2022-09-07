@@ -1,19 +1,16 @@
 from tkinter import *
-from PIL import ImageTk, Image
 
-window = Tk()
+window= Tk()
+frame = Frame(window)
 
-name = Label(window, text='PythonX - Learn Python', bg='white', fg='blue', font=('Serif', 16))
-img = Image.open('py.png')
-logo = ImageTk.PhotoImage(img)
-image = Label(window, image=logo)
-button = Button(window, text='Lets start!')
-username = Label(window, text='Username', font=('Serif', 12))
-inputBox = Entry(window)
+lbl = Label(window, text='gender')
+var = StringVar()
 
-name.pack()
-image.pack()
-button.place(x=130, y=350)
-username.pack(side=LEFT)
-inputBox.pack(side=RIGHT)
+male = Radiobutton(window, text='Male', variable=var, value='M')
+female = Radiobutton(window, text='Female', variable=var, value='F')
+
+lbl.pack()
+male.pack()
+female.pack()
+
 window.mainloop()
