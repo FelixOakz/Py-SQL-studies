@@ -137,25 +137,27 @@ enterName.place(x=170, y=60)
 enterDept = Entry(window)
 enterDept.place(x=170, y=90)
 
+
 insertBtn = Button(window, text="Insert", font=(
-    "Sans", 12), bg="white", command=insertData)
+    "Sans", 11), bg="white", command=insertData)
 insertBtn.place(x=20, y=160)
 
 updateBtn = Button(window, text="Update", font=(
-    "Sans", 12), bg="white", command=updateData)
+    "Sans", 11), bg="white", command=updateData)
 updateBtn.place(x=80, y=160)
 
 getBtn = Button(window, text="Fetch", font=(
-    "Sans", 12), bg="white", command=getData)
+    "Sans", 11), bg="white", command=getData)
 getBtn.place(x=150, y=160)
 
 deleteBtn = Button(window, text="Delete", font=(
-    "Sans", 12), bg="white", command=deleteData)
+    "Sans", 11), bg="white", command=deleteData)
 deleteBtn.place(x=210, y=160)
 
 resetBtn = Button(window, text="Reset", font=(
-    "Sans", 12), bg="white", command=resetFields)
+    "Sans", 11), bg="white", command=resetFields)
 resetBtn.place(x=20, y=210)
+
 
 showData = Listbox(window)
 showData.place(x=330, y=30)
