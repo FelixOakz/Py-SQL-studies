@@ -12,7 +12,7 @@ def insertData():
         messagebox.showwarning("Cannot Insert", "All the fields are required!")
     else:
         myDB = mysql.connector.connect(
-            host="localhost", user="root", passwd="YOUR_PASSWORD", database="employee")
+            host="localhost", user="root", passwd="timemachine", database="employee")
         myCur = myDB.cursor()
         myCur.execute("insert into empDetails values('"+id +
                       "', '" + name + "', '" + dept + "' ) ")
@@ -37,7 +37,7 @@ def updateData():
         messagebox.showwarning("Cannot Update", "All the fields are required!")
     else:
         myDB = mysql.connector.connect(
-            host="localhost", user="root", passwd="YOUR_PASSWORD", database="employee")
+            host="localhost", user="root", passwd="timemachine", database="employee")
         myCur = myDB.cursor()
         myCur.execute("update empDetails set empName='" + name +
                       "', empDept='" + dept + "' where empId='"+id + "'")
@@ -59,7 +59,7 @@ def getData():
             "Fetch Status", "Please provide the Emp ID to fetch the data")
     else:
         myDB = mysql.connector.connect(
-            host="localhost", user="root", passwd="YOUR_PASSWORD", database="employee")
+            host="localhost", user="root", passwd="timemachine", database="employee")
         myCur = myDB.cursor()
         myCur.execute("select * from empDetails where empID='" +
                       enterId.get() + "'")
@@ -74,7 +74,7 @@ def getData():
 
 def show():
     myDB = mysql.connector.connect(
-        host="localhost", user="root", passwd="YOUR_PASSWORD", database="employee")
+        host="localhost", user="root", passwd="timemachine", database="employee")
     myCur = myDB.cursor()
     myCur.execute("select * from empDetails")
     rows = myCur.fetchall()
@@ -93,7 +93,7 @@ def deleteData():
             "Cannot Delete", "Please provide the Emp ID to delete the data")
     else:
         myDB = mysql.connector.connect(
-            host="localhost", user="root", passwd="YOUR_PASSWORD", database="employee")
+            host="localhost", user="root", passwd="timemachine", database="employee")
         myCur = myDB.cursor()
         myCur.execute("delete from empDetails where empID='" +
                       enterId.get() + "'")
