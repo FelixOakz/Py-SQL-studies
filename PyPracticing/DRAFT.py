@@ -1,7 +1,44 @@
+# importing essential GUI, database and popup message tools
 from tkinter import *
+from tkinter import messagebox
+import mysql.connector
 
 
-# WHOLE GUI CODE >>>
+# WHOLE LOGIC AND FUNCTIONING BACKEND:
+
+# read data provided by user
+def insertData():
+    id = enterId.get()
+    name = enterName.get()
+    dept = enterDept.get()
+
+# data validation for a warning message If empty data is provided by user
+    if(id =="" or name =="" or dept ==""):
+        messagebox.showwarning("Cannot Insert", "All the fields required!")
+    else:
+# inserting data in the empDetails table
+        myDB = mysql.connector.connect(
+            host="localhost",
+            user="root",
+            passwd="timemachine",
+            database="employee")
+        myDB.cursor()
+
+        enterId.delete(0, "end")
+        enterName.delete(0, "end")
+        enterDept.delete(0, "end",)
+
+        show()
+
+        messagebox.showinfo("Insert Status:", "Data Inserted Sucesfully!")
+        myDB.close()
+
+
+
+
+
+
+# WHOLE GUI CODE:
 
 #creating parent window at the required size with the right label
 window = Tk()
@@ -29,25 +66,26 @@ enterDept = Entry(window)
 enterDept.place(x=170, y=90)
 
 #adding buttons to perform CRUD operations and a reset button
+
 #Using the command option we specify the method that will be called when clicked
 insertBtn = Button(window, text="Insert", font=(
-    "Sans", 11), bg="white", command=insertData)
+    "Sans", 11), bg="white", command=insertData) # will interact with specific method
 insertBtn.place(x=20, y=160)
 
 updateBtn = Button(window, text="Update", font=(
-    "Sans", 11), bg="white", command=updateData)
+    "Sans", 11), bg="white", command=updateData) # will interact with specific method
 updateBtn.place(x=80, y=160)
 
 getBtn = Button(window, text="Fetch", font=(
-    "Sans", 11), bg="white", command=getData)
+    "Sans", 11), bg="white", command=getData) # will interact with specific method
 getBtn.place(x=150, y=160)
 
 deleteBtn = Button(window, text="Delete", font=(
-    "Sans", 11), bg="white", command=deleteData)
+    "Sans", 11), bg="white", command=deleteData) # will interact with specific method
 deleteBtn.place(x=210, y=160)
 
 resetBtn = Button(window, text="Reset", font=(
-    "Sans", 11), bg="white", command=resetFields)
+    "Sans", 11), bg="white", command=resetFields) # will interact with specific method
 resetBtn.place(x=20, y=210)
 
 # final listbox widget, it will show the database table
