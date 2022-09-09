@@ -6,7 +6,7 @@ import mysql.connector
 
 # WHOLE LOGIC AND FUNCTIONING BACKEND:
 
-# read data provided by user
+# INSERT METHOD: read data provided by user
 def insertData():
     id = enterId.get()
     name = enterName.get()
@@ -14,25 +14,30 @@ def insertData():
 
 # data validation for a warning message If empty data is provided by user
     if(id =="" or name =="" or dept ==""):
+# different type of message box: showwarning
         messagebox.showwarning("Cannot Insert", "All the fields required!")
     else:
-# inserting data in the empDetails table
+# accessing database
         myDB = mysql.connector.connect(
             host="localhost",
             user="root",
             passwd="timemachine",
             database="employee")
-        myDB.cursor()
-
+# inserting data in the empDetails table
+        myCur = myDB.cursor()
+        myCur.execute("insert into empDetails values('"+ id +"','"+ name +"','"+ dept +"') ")
+        myDB.commit()
+# once inserted we clear the data from entry field using delete() method
         enterId.delete(0, "end")
         enterName.delete(0, "end")
         enterDept.delete(0, "end",)
-
         show()
-
+# different type of message box: showinfo
         messagebox.showinfo("Insert Status:", "Data Inserted Sucesfully!")
         myDB.close()
 
+
+# UPDATE METHOD: read data provided by user
 
 
 

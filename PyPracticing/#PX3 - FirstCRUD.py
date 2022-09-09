@@ -1,13 +1,10 @@
 from tkinter import *
 from tkinter import messagebox
 import mysql.connector
-
-
 def insertData():
     id = enterId.get()
     name = enterName.get()
     dept = enterDept.get()
-
     if(id == "" or name == "" or dept == ""):
         messagebox.showwarning("Cannot Insert", "All the fields are required!")
     else:
@@ -17,17 +14,12 @@ def insertData():
         myCur.execute("insert into empDetails values('"+id +
                       "', '" + name + "', '" + dept + "' ) ")
         myDB.commit()
-
         enterId.delete(0, "end")
         enterName.delete(0, "end")
         enterDept.delete(0, "end")
-
         show()
-
         messagebox.showinfo("Insert Status", "Data Inserted Succesfully")
         myDB.close()
-
-
 def updateData():
     id = enterId.get()
     name = enterName.get()
