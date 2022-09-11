@@ -1,11 +1,3 @@
-lanche = (
-    "pizza",
-    "burguer",
-    "refri",
-    "pudim",
-)
-
-print(f'{lanche}\n')
-
-for i in lanche:
-    print(i)
+cities = ("London", "Tokyo", "New York")
+for city in cities:
+  print(city)
