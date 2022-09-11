@@ -6,3 +6,4 @@ while p != d:
     p += r
 print('Fim')
 
+
