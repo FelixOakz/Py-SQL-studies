@@ -28,3 +28,7 @@ times =(
 	'ATHLETICO-GO',
 	'JUVENTUDE'
 )
+print(f'Primeiros 5 colocados: {times[0:4]}')
+print(f'Ultimos 4 colocados: {times[16:19]}')
+print(f'Lista com ordem alfababetica: {})
+print(f'Flamengo se encontra na {}ª posicao na lista')
