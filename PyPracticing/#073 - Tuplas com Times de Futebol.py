@@ -5,7 +5,6 @@ b: os ultimos 4 colocados
 c: uma lista com os times em ordem alfabetica
 d: em que posical da tabela esta o time chapecoense
 """
-
 times =(
 	'PALMEIRAS',
 	'INTERNACIONAL',
@@ -30,5 +29,5 @@ times =(
 )
 print(f'Primeiros 5 colocados: {times[0:4]}')
 print(f'Ultimos 4 colocados: {times[16:19]}')
-print(f'Lista com ordem alfababetica: {})
-print(f'Flamengo se encontra na {}ª posicao na lista')
+print(f'Lista com ordem alfababetica: {sorted(times)}')
+print(f'Flamengo se encontra na {4}ª posicao na lista')
