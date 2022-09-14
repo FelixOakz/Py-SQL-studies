@@ -1,3 +1,3 @@
-tupla = ('carro', 'moto')
+tupla = ('carro', 'kkkkk')
 
 print(tupla[0])
