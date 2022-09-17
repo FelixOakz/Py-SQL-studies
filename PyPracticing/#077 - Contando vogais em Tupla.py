@@ -2,13 +2,15 @@
 tupla com varias palavras, depois deve mostrar para cada palavra, quais sao suas vogais
 
 """
+from prompt_toolkit import output
+
 palavras = (
 	'aprender',
 	'curso',
 	'trabalhar',
 	'programar',
 	'gratis',
-	'estudar'
+	'estudar',
 	'mercado',
 	'python',
 	'linguagem',

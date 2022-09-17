@@ -1,6 +1,1 @@
-cities = ("London", "Tokyo", "New York")
-for city in cities:
-    print(city)
-
-
-    print('chama no github')
+print([number for number in range(25, 35, 2)])
