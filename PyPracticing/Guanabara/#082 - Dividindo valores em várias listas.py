@@ -7,5 +7,4 @@ while True:
 par = [x for x in lista if x % 2 == 0]
 impar = [x for x in lista if x % 2 != 0]
 print(f'A lista completa: {lista}')
-print(f'a lista de pares: {par}')
-print(f'a lista de impares: {impar}')
+print(f'Numeros pares foram {par} e impares foram {impar}')
