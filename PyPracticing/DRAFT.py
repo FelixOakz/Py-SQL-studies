@@ -1,14 +1,14 @@
-from random import randint
-computador = randint(1, 3)
-# gerando numero aleatorio a partir de modulo importado
-print(f'[1] Pedra\n[2] Papel\n[3] Tesoura')
-# pedindo input de usuario
-humano = int(input('Qual a sua jogada?: '))
-print(f'Computador jogou {computador}, Resultado: ')
-# condicoes para decisao de resultado do jogo
-if humano == computador:
-    print('EMPATE!')
-elif humano == 1 and computador == 2 or humano == 2 and computador == 3 or humano == 3 and computador == 1:
-    print('Computador Ganha!')
-else:
-    print('Humano Ganha!')
+# for loop para printar numeros de zero a cem
+for i in range(1, 101):
+    # condicoes diferenciadas de acordo com resultado esperado
+    if i % 3 == 0 and i % 5 == 0:
+        print('FizzBuzz')
+        # pular iteracoes seguintes, entregando controle de volta para loop
+        continue
+    elif i % 3 == 0:
+        print('Fizz')
+        continue
+    elif i % 5 == 0:
+        print('Buzz')
+        continue
+    print(i)
