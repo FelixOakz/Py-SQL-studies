@@ -1,13 +1,18 @@
-dados = []
-galera = []
-
+entrada = []
+pessoas = []
+cont = 0
 while True:
-	dados.append(str(input('Qual seu nome?: ')))
-	dados.append(str(input('Qual sua idade?: ')))
-	galera.append(dados[:])
-	dados.clear()
-	r = input('Deseja continuar? [S/N]: ').strip()
+	entrada.append(str(input('Qual seu nome?: ')))
+	entrada.append(str(input('Qual seu peso?: ')))
+
+	pessoas.append(entrada[:])
+	cont += 1
+	entrada.clear()
+	r = entrada('Deseja continuar? [S/N]: ').strip()
 	if r in 'Nn':
 		break
-
-print(galera)
+print('-'*40)
+print(f'Os dados foram {pessoas}'
+print(f'Ao todo, foram cadastradas {len(pessoas) pessoas.}')
+print(f'Maior peso foi de {}kg, peso de {}.')
+print(f'Menor peso foi de {}kg, peso de {}.')
