@@ -1,11 +1,16 @@
 entrada = []
 pessoas = []
-cont = menor = maior = 0
 while True:
 	entrada.append(str(input('Qual seu nome?: ')))
 	entrada.append(str(input('Qual seu peso?: ')))
+	if len(pessoas) == 0:
+		maior = menor = entrada[1]
+	else:
+		if entrada[1] > maior:
+			maior = entrada[1]
+		if entrada[1] < menor:
+			menor = entrada[1]
 	pessoas.append(entrada[:])
-	cont += 1
 	entrada.clear()
 	r = str(input('Deseja continuar? [S/N]: ')).strip()
 	if r in 'Nn':
@@ -13,5 +18,11 @@ while True:
 print('-'*40)
 print(f'Os dados foram {pessoas}')
 print(f'Ao todo, foram cadastradas {len(pessoas)} pessoas.')
-#print(f'Maior peso foi de {}kg, peso de {}.')
-#print(f'Menor peso foi de {}kg, peso de {}.')
+print(f'Maior peso foi de {maior}kg,', end='')
+for i in pessoas:
+	if i[1] == maior:
+		print(f' peso de {i[0]}')
+print(f'Menor peso foi de {maior}kg', end='')
+for i in pessoas:
+	if i[1] == menor:
+		print(f' peso de {i[0]}')
