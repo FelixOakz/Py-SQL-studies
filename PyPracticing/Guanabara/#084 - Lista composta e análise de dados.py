@@ -18,11 +18,13 @@ while True:
 print('-'*40)
 print(f'Os dados foram {pessoas}')
 print(f'Ao todo, foram cadastradas {len(pessoas)} pessoas.')
-print(f'Maior peso foi de {maior}kg,', end='')
+print(f'Maior peso foi de {maior}kg, peso de ', end='')
 for i in pessoas:
 	if i[1] == maior:
-		print(f' peso de {i[0]}')
-print(f'Menor peso foi de {maior}kg', end='')
+		print(f'{i[0]},', end='')
+print()
+print(f'Menor peso foi de {menor}kg, peso de ', end='')
 for i in pessoas:
 	if i[1] == menor:
-		print(f' peso de {i[0]}')
+		print(f'{i[0]},', end='')
+print()
