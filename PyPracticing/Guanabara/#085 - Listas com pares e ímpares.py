@@ -8,5 +8,7 @@ for i in numeros:
 		pares.append(i)
 	else:
 		impares.append(i)
-print(f'Numeros pares foram {sort(pares)}')
-print(f'Numeros impares foram {sort(impares)}')
+pares.sort()
+impares.sort()
+print(f'Numeros pares foram {pares}')
+print(f'Numeros impares foram {impares}')
