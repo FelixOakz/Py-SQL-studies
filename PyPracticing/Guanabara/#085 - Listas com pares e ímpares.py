@@ -9,3 +9,5 @@ for i in range(1, 8):
 numeros[0].sort()
 numeros[1].sort()
 print(f'Todos os valores: {numeros}')
+print(f'Todos valores pares foram: {numeros[0]}')
+print(f'Todos valores impares foram: {numeros[1]}')
