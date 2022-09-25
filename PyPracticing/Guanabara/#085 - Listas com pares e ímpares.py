@@ -1,14 +1,12 @@
-numeros = []
-pares = []
-impares = []
+numeros = [[], []]
+v = 0
 for i in range(1, 8):
-	numeros.append(int(input(f'Digite o {i} valor: ')))
+	v = int(input(f'Digite o {i} valor: '))
 for i in numeros:
 	if i % 2 == 0:
-		pares.append(i)
+		numeros[0].append(i)
 	else:
-		impares.append(i)
-pares.sort()
-impares.sort()
+		numeros[1].append(i)
+
 print(f'Numeros pares foram {pares}')
 print(f'Numeros impares foram {impares}')
