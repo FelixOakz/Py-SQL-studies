@@ -2,7 +2,7 @@ from random import randint
 from time import sleep
 jogos = []
 lista = []
-print('-'*30, '        JOGOS NA MEGA','-'*30, sep='\n')
+print('-'*30, '>       JOGOS NA MEGA','-'*30, sep='\n')
 jogo = int(input('Quantos jogos voce quer?: '))
 print(f'\n> Sorteando {jogo} jogos:')
 for i in range(jogo):
