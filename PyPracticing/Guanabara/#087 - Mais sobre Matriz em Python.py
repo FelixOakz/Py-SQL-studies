@@ -1,14 +1,11 @@
 m = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-par = 0
-for i in range(0, 3):
-	for j in range(0, 3):
+par = col3 = 0
+for i in range(3):
+	for j in range(3):
 		m[i][j] = int(input(f'Digite um valor para [{i}, {j}]:'))
-for i in range(0, 3):
-	for j in range(0, 3):
-		print(f'[{m[i][j]:^5}]', end='')
-		if m[i][j] % 2 == 0:
-			par += m[i][j]
-	print()
+		par += m[i][j] if m[i][j] % 2 == 0 else 0
+		col3 += m[i][j] if j == 2 else 0
+print('-'* 35, *m,'-'* 35, sep='\n')
 print(f'A soma dos valores pares eh {par}.')
-print(f'A soma dos valores da terceira coluna eh de {m[0][2] + m[1][2] + m[2][2]}.')
+print(f'A soma dos valores da terceira coluna eh de {col3}.')
 print(f'O maior valor da segunda linha eh {max(m[1])}.')
