@@ -1,8 +1,12 @@
 dict = {}
 dict['nome'] = str(input('Qual nome?: '))
 dict['media'] = float(input(f'Qual a media de {dict["nome"]}?: '))
-print(f'Nome eh igual a {dict["nome"]}.\nMedia eh igual a {dict["media"]}.')
-if dict['media'] > 7.5:
-	print('Situacao eh igual a Aprovado.')
+if dict['media'] >= 7.5:
+	dict['situacao'] = 'APROVADO'
+elif 4 <= dict['media'] < 7.5:
+	dict['situacao'] = 'RECUPERACAO'
 else:
-	print('Situacao eh igual a Reprovado.')
+	dict['situacao'] = 'REPROVADO'
+print('-'*30)
+for i, j in dict.items():
+	print(f'{i} eh igual a {j}.')
