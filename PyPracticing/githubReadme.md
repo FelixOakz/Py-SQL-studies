@@ -2,23 +2,19 @@
 <h3 align="center">A guy from Brazil who loves creating and building things very methodically</h3>
 
 
-- 👨‍💻 I’m currently working on **personal projects to enhance my portfolio**
+- 👨‍💻 I’m currently working on **personal projects to enhance my portfolio, freelancing**
 
-- 📚 I’m currently learning **new frameworks and improving Frontend skills**
+- 📚 I’m currently learning **new technologies and improving Frontend skills**
 
-- 👥 I’m looking to collaborate on **open source projects**
+- 👥 I’m looking to collaborate on **open source repositories**
 
 - 📝 I write articles on [https://dev.to/felixoakz](https://dev.to/felixoakz)
 
-- ❓ Ask me about **Python, SQL, Git, Health, Time Management, Planning, Emotional Skills, Adaptability...**
-
 - 📫 How to reach me **felix@oakz.org**
-
-- 📄 Know about my experiences [linkedin.com/in/felixoakz/](linkedin.com/in/felixoakz/)
 
 - ⚡🚴 Fun fact: **I'm a road cyclist that already rode more than 2 times Earth's circumference**
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Let's connect:</h3>
 <p align="left">
 <a href="https://dev.to/felixoakz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="felixoakz" height="30" width="40" /></a>
 <a href="https://twitter.com/felixoakz" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="felixoakz" height="30" width="40" /></a>
