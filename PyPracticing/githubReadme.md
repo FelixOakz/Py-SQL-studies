@@ -1,6 +1,8 @@
 <h1 align="center">Bonsoir, I'm Felix! 😊</h1>
 <h3 align="center">a Brazilian who loves creating and building things very methodically</h3>
 
+ <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=felixoakz&layout=compact&langs_count=1&theme=dracula"/>
+
 
 - 👨‍💻 I’m currently working on **personal projects to enhance my portfolio, freelancing**
 
