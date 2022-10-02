@@ -1,0 +1,20 @@
+
+_python:S2208"GImport only needed names or import the module and then use its members.(ÔÄ¢ç
+mpython:S117"VRename this local variable "myCur" to match the regular expression ^[_a-z][a-z0-9_]*$.(ı°Ÿ÷
+qpython:S117"URename this local variable "myDB" to match the regular expression ^[_a-z][a-z0-9_]*$.(†£ø·˚ˇˇˇˇ
+hpython:S1542	"PRename function "insertData" to match the regular expression ^[a-z_][a-z0-9_]*$.(€Ù≠ì
+Cpython:S5806"+Rename this variable; it shadows a builtin.(ı≈Âü
+mpython:S117<"VRename this local variable "myCur" to match the regular expression ^[_a-z][a-z0-9_]*$.(ı°Ÿ÷
+qpython:S1176"URename this local variable "myDB" to match the regular expression ^[_a-z][a-z0-9_]*$.(†£ø·˚ˇˇˇˇ
+mpython:S1542)"PRename function "updateData" to match the regular expression ^[a-z_][a-z0-9_]*$.(ÂÈ‰¯˚ˇˇˇˇ
+Cpython:S5806+"+Rename this variable; it shadows a builtin.(ı≈Âü
+mpython:S117U"VRename this local variable "myCur" to match the regular expression ^[_a-z][a-z0-9_]*$.(ı°Ÿ÷
+qpython:S117P"URename this local variable "myDB" to match the regular expression ^[_a-z][a-z0-9_]*$.(†£ø·˚ˇˇˇˇ
+dpython:S1542J"MRename function "getData" to match the regular expression ^[a-z_][a-z0-9_]*$.(çÖ≈P
+mpython:S117o"VRename this local variable "myCur" to match the regular expression ^[_a-z][a-z0-9_]*$.(ı°Ÿ÷
+qpython:S117j"URename this local variable "myDB" to match the regular expression ^[_a-z][a-z0-9_]*$.(†£ø·˚ˇˇˇˇ
+mpython:S1542c"PRename function "deleteData" to match the regular expression ^[a-z_][a-z0-9_]*$.(¢§ª…ˇˇˇˇˇ
+upython:S117ä"XRename this local variable "addData" to match the regular expression ^[_a-z][a-z0-9_]*$.(≤«éÖ˘ˇˇˇˇ
+npython:S117Ö"VRename this local variable "myCur" to match the regular expression ^[_a-z][a-z0-9_]*$.(ı°Ÿ÷
+rpython:S117Ä"URename this local variable "myDB" to match the regular expression ^[_a-z][a-z0-9_]*$.(†£ø·˚ˇˇˇˇ
+opython:S1542è"QRename function "resetFields" to match the regular expression ^[a-z_][a-z0-9_]*$.(ˆˇ«•˘ˇˇˇˇ
