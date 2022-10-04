@@ -1,16 +1,29 @@
-# creating condition to input validation in required range
-from cs50 import get_int
-
-n = 0
-
-while n < 1 or n > 8:
-       n = get_int("height :")
-
-# printing a hash plus one more hash on each iteration created
-for i in range(n):
-    for j in range(1, n+1):
-        if j > n-i-1 and j < n+1:
-            print("#", end="")
-        else:
-            print(" ", end="")
-    print()
+notas50 = notas20 = notas10 = notas1 = totced = 0
+while True:
+    valor = int(input('Insira o valor que deseja sacar(R$): '))
+    while valor >= 50:
+        valor -= 50
+        notas50 += 1
+        totced += 1
+    while valor >= 20:
+        valor -= 20
+        notas20 += 1
+        totced += 1
+    while valor >= 10:
+        valor -= 10
+        notas10 += 1
+        totced += 1
+    while valor >= 1:
+        valor -= 1
+        notas1 += 1
+        totced += 1
+    break
+print(f'\n> Lhe serao entregues {totced} cedulas no total, sendo:')
+if notas50 != 0:
+    print(f'{notas50} notas de R$50,',end='')
+if notas20 != 0:
+    print(f' {notas20} notas de R$20,',end='')
+if notas10 != 0:
+    print(f' {notas10} notas de R$10,',end='')
+if notas1 != 0:
+    print(f' {notas1} notas de R$1. Bom dia!')
