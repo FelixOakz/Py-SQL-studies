@@ -1,4 +1,4 @@
-"""Crie um programa que leia nome, Sexo e idade de várias
+"""Crie um programa que leia nome, Sexo e idade de váriastemp
 pessoas, guardando os dados de cada
 pessoa em um
 dicionário a todos os
