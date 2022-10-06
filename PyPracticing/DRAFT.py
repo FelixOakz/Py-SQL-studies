@@ -1,4 +1,9 @@
-def mostralinha(text):
-    print(f"{'-'*30}\n{text:^30}\n{'-'*30}")
+def dobra (lst):
+    pos = 0
+    while pos< len(lst):
+        lst [pos] *= 3
+        pos += 1
 
-mostralinha('BANCO GUANABARA')
+valores = [6, 3, 9, 1, 0, 2]
+dobra (valores)
+print(valores)
