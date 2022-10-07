@@ -11,4 +11,9 @@ as mulheres.
 D) Uma lista com todas
 as pessoas com idade acima da média.
 """
+dict = {}
+lista = []
 
+dict['nome'] = str(input('Nome: '))
+dict['sexo'] = str(input('Sexo: ')).upper()[0]
+dict['idade'] = str(input('Idade: '))
