@@ -14,7 +14,15 @@ as pessoas com idade acima da média.
 
 dict = {}
 lista = []
+while True:
+	dict['nome'] = str(input('Nome: '))
+	dict['sexo'] = str(input('Sexo: ')).upper()[0]
+	dict['idade'] = str(input('Idade: '))
+	lista.append(dict)
+	r = str(input('Deseja continuar?[s/n]: ')).upper()[0]
+	if r != 'S':
+		break
 
-dict['nome'] = str(input('Nome: '))
-dict['sexo'] = str(input('Sexo: ')).upper()[0]
-dict['idade'] = str(input('Idade: '))
+print(dict)
+print(lista)
+
