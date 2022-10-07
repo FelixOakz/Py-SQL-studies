@@ -11,6 +11,7 @@ as mulheres.
 D) Uma lista com todas
 as pessoas com idade acima da média.
 """
+
 dict = {}
 lista = []
 
