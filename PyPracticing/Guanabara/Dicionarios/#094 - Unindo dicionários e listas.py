@@ -23,6 +23,3 @@ while True:
 	if r != 'S':
 		break
 
-print(dict)
-print(lista)
-
