@@ -5,6 +5,6 @@ with open('csvtest.csv', 'a') as file:
 	score = input('Number: ')
 
 	writer = csv.DictWriter(file, fieldnames=['team', 'score'])
-	writer.writerow({'team': team, 'score':score})
+	writer.writerow({'team': team, 'score': score})
 
 # file.close() would be here, but with keyword maked is redundant
