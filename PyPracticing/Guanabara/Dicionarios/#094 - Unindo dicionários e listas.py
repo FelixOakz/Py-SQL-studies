@@ -17,9 +17,11 @@ lista = []
 while True:
 	dict['nome'] = str(input('Nome: '))
 	dict['sexo'] = str(input('Sexo: ')).upper()[0]
-	dict['idade'] = str(input('Idade: '))
-	lista.append(dict)
+	dict['idade'] = int(input('Idade: '))
+	lista.append(dict.copy())
+
 	r = str(input('Deseja continuar?[s/n]: ')).upper()[0]
 	if r != 'S':
 		break
 
+print(f'Foram cadastradas {len(lista)} pessoas.')
