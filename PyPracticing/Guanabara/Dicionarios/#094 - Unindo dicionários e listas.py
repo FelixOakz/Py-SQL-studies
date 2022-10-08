@@ -23,5 +23,5 @@ while True:
 	r = str(input('Deseja continuar?[s/n]: ')).upper()[0]
 	if r != 'S':
 		break
-
+print(lista)
 print(f'Foram cadastradas {len(lista)} pessoas.')
