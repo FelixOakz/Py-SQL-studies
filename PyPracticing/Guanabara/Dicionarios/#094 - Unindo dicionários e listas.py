@@ -6,7 +6,8 @@ dicionários em uma
 lista. No final, mostra:
 A) Quantas pessoas foram cadastradas
 B) A média de idade do
-grupo. C) Uma lista com todas
+grupo.
+C) Uma lista com todas
 as mulheres.
 D) Uma lista com todas
 as pessoas com idade acima da média.
@@ -14,9 +15,12 @@ as pessoas com idade acima da média.
 
 dict = {}
 lista = []
+m = []
 while True:
 	dict['nome'] = str(input('Nome: '))
 	dict['sexo'] = str(input('Sexo: ')).upper()[0]
+	if dict['sexo'] == 'F':
+		m.append()
 	dict['idade'] = int(input('Idade: '))
 	lista.append(dict.copy())
 
@@ -25,3 +29,4 @@ while True:
 		break
 print(lista)
 print(f'Foram cadastradas {len(lista)} pessoas.')
+print(f'Lista com mulheres: {m}')
