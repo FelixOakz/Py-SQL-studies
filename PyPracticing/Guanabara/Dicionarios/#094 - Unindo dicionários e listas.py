@@ -1,10 +1,3 @@
-"""
-B) A média de idade do
-grupo.
-D) Uma lista com todas
-as pessoas com idade acima da média.
-"""
-
 dict = {}
 lista = []
 age = 0
@@ -17,11 +10,15 @@ while True:
 	r = str(input('Deseja continuar?[s/n]: ')).upper()[0]
 	if r != 'S':
 		break
-print()
-print(lista)
-print()
+
 print(f'Foram cadastradas {len(lista)} pessoas.')
-print(f'A media de idade {age/len(lista):.1f}')
+print(f'A media de idade: {age/len(lista):.1f}')
+print(f'Pessoas com idade acima da media: ', end='')
+for i in lista:
+	if i['idade'] >= (age/len(lista)):
+		for k, f in i.items():
+			print(f'{k} = {f}; ', end='')
+		print()
 print(f'Lista com mulheres: ',end='')
 for i in lista:
 	if i['sexo'] == 'F':
