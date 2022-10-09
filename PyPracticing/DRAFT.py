@@ -1,9 +1,10 @@
-def dobra (lst):
+def dobra(lst):
     pos = 0
-    while pos< len(lst):
-        lst [pos] *= 3
+    while pos < len(lst):
+        lst[pos] *= 3
         pos += 1
 
+
 valores = [6, 3, 9, 1, 0, 2]
-dobra (valores)
+dobra(valores)
 print(valores)
