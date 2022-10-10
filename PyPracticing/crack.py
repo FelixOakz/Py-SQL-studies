@@ -11,7 +11,6 @@ for passcode in product(digits, repeat=4):
 
 	print(*passcode)
 '''
-
 import itertools
 '''
 map() converts our input into integers to match the type of the contents of 'a' 
