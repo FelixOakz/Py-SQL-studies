@@ -1,8 +1,24 @@
 
-from string import ascii_letters, digits, punctuation
+'''from string import digits
 # giving access to all ascii characters, decimal digits and punctuation marks
 from itertools import product
 # habillity to cross product of all numbers
 
-for passcode in product(ascii_letters + digits + punctuation, repeat=8):
+passwd = int(input('Enter the 4 digit password: '))
+
+
+for passcode in product(digits, repeat=4):
+
 	print(*passcode)
+'''
+import itertools
+'''
+map() converts our input into integers to match the type of the contents of 'a' 
+and tuple() makes it a tuple to match the type of combinations.
+'''
+password = tuple(map(int, input('Pass: ')))
+digits = list(range(0, 10))
+
+for passcode in itertools.product(digits, repeat=4):
+    if passcode == password:
+        print("The password is: " + ''.join(str(i) for i in password))
