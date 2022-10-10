@@ -21,3 +21,5 @@ print(f'O jogador {dict["nome"]} jogou {len(dict["gols"])} partidas.')
 for i, j in enumerate(dict['gols']):
 	print(f'-> Na partida {i+1} fez {j} gols.')
 print(f'Somando um total de {dict["gols"]} gols.')
+
+print('hello')
