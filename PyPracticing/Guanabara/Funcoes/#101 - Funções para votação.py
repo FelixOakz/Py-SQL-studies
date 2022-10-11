@@ -8,5 +8,5 @@ def voto(nasc):
 	else:
 		return f'Com {age} anos: VOTO OBRIGATORIO.'
 
-
-voto(int(input('Que ano vc nasceu?: ')))
+r = int(input('Que ano vc nasceu?: '))
+print(voto(r))
