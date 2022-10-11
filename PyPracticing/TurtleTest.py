@@ -14,4 +14,3 @@ for i in range(120):
 	forward(3)
 
 done()
-
