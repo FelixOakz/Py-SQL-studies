@@ -6,4 +6,3 @@ password = input('Enter your passsword: ')
 qrcode = qrcode.QRCode()
 qrcode.add_data(f'{network} {password}')
 qrcode.make_image().save('WifiQR.png')
-
