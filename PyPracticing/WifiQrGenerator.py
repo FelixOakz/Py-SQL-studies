@@ -1,8 +1,8 @@
-import qrcode
+import wifi_qrcode_generator
 
-network = input('Enter your network name: ')
-password = input('Enter your passsword: ')
+ssid = input('Home wifi')
+type = 'WPA'
+password = input('very complicated password')
 
-qrcode = qrcode.QRCode()
-qrcode.add_data(f'{network} {password}')
-qrcode.make_image().save('WifiQR.png')
+img = wifi_qrcode_generator.wifi_qrcode(ssid, False, type , password)
+img.save(ssid+'.png')
