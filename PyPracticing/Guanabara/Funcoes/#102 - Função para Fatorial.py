@@ -1,6 +1,6 @@
 def fatorial(num, show=False):
 	"""
-	Calcula o fatorial de um numero arbitrario
+	-> Calcula o fatorial de um numero arbitrario
 	:param num: o numero a ser calculado
 	:param show: opcional, caso queira o calculo por extenso
 	:return: o valor fatorial de um numero.
@@ -15,4 +15,5 @@ def fatorial(num, show=False):
 		c -= 1
 	print(f)
 
-fatorial()
+help.fatorial
+
