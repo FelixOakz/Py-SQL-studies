@@ -15,4 +15,4 @@ def fatorial(num, show=False):
 		c -= 1
 	print(f)
 
-fatorial(5)
+fatorial()
