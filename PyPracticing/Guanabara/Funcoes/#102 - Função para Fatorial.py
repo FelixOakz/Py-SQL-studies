@@ -15,5 +15,5 @@ def fatorial(num, show=False):
 		c -= 1
 	print(f)
 
-help.fatorial
+help(fatorial)
 
