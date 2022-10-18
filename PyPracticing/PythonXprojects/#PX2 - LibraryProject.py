@@ -38,7 +38,7 @@ class Library:
 
 
 def main():
-    while(True):
+    while True:
         print(
             f"Welcome to the {library.name} library. Following are the options,")
         choice = """ 

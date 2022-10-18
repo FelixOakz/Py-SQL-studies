@@ -33,6 +33,7 @@ def getPrice(product, quantity):
         "Apple":3,
         "Onion":3
     }
+
     subtotal = priceData[product] * quantity
     print(product + ":$" + str(priceData[product]) + "x" + str(quantity) + "=" + str(subtotal))
     return subtotal
