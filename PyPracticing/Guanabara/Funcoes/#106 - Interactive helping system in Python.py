@@ -16,4 +16,3 @@ while True:
 		break
 	else:
 		ajuda(comando)
-
