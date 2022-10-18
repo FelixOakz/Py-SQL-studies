@@ -1,4 +1,4 @@
-def notas(*n, sit=False):
+def notas(*n, sit=False):'mod'
 	"""
 	-> funcao para analisar notas e situacoes de varios alunos
 	:param not: uma ou mais notas dos alunos
