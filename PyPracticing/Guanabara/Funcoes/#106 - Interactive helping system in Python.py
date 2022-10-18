@@ -1,5 +1,4 @@
 def ajuda(comando):
-	import comando
 	help(comando)
 
 
