@@ -12,3 +12,5 @@ for i in range(1, 101):
         print('Buzz')
         continue
     print(i)
+
+# that was it
