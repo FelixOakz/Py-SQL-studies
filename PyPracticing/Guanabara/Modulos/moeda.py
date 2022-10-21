@@ -1,8 +1,10 @@
 def aumentar(p, val):
-	return p * (val/10)
+	val = val / 100
+	return p * val
 
 def diminuir(p, val):
-	return p / (val/10)
+	val = val / 100
+	return p / val
 
 def dobro(p):
 
