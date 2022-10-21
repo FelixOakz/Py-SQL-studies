@@ -1,4 +1,4 @@
-from PyPracticing.Guanabara.Modulos.ex107 import moeda
+import moeda
 
 p = float(input('Type the value: R$'))
 print(f'A metade de {p} é {moeda.metade(p)}')
