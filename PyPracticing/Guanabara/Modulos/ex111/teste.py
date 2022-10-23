@@ -1,4 +1,5 @@
 from utilidades import moeda
+from utilidades import dados
 
-p = float(input('Type the value: R$ '))
+p = dados.readvalue('Enter the value in R$: ')
 moeda.resumo(p, 35, 22)
