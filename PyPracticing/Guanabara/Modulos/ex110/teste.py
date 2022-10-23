@@ -1,4 +1,4 @@
 import moeda
 
 p = float(input('Type the value: R$ '))
-resumo(p)
+moeda.resumo(p, 10, True)
