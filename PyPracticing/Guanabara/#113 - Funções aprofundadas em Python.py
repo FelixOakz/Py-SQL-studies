@@ -1,16 +1,17 @@
 def Leiaint(msg):
 	while True:
 		try:
-			n = str(input(msg))
+			n = int(input(msg))
+
 		except (ValueError, TypeError):
 			print('Provavelmente vc digitou errado.')
 			continue
+
 		except KeyboardInterrupt:
 			print('Usuario preferiu nao informar dados.')
-
-		finally:
+			return 0
+		else:
 			return n
-			print('Volte sempre! Muito obrigado!')
 
 
 num = Leiaint('Digite um valor: ')
