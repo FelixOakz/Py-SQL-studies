@@ -22,12 +22,12 @@ def moeda(val):
 	return f'R${val:.2f}'
 
 
-def resumo(p, plus=0, less=0):
+def resumo(p=0, plus=0, less=0):
 	print('-'*30)
-	print('RESUMO DO VALOR')
+	print('RESUMO DO VALOR'.center(30))
 	print('-' * 30)
-	print(f'Preco analisado eh de {moeda(p)}')
-	print(f'O dobro do preco equivale a {dobro(p, True)}')
-	print(f'A metade do preco equivale a {metade(p, True)}')
-	print(f'Aumentando em {plus} o valor equivale a {aumentar(p)}')
-	print(f'Aumentando em {less} o valor equivale a {diminuir(p)}')
+	print(f'Preco analisado: \t{moeda(p)}')
+	print(f'O dobro equivale: \t{dobro(p, True)}')
+	print(f'A metade equivale: \t{metade(p, True)}')
+	print(f'Aumentando em {plus}% o valor equivale a {aumentar(p, 10)}')
+	print(f'Diminuindo em {less}% o valor equivale a {diminuir(p, 13)}')
