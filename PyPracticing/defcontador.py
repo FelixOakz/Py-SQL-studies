@@ -12,3 +12,4 @@ def counter(start, end, step):
 		print(f'{end}', end='')
 		c += step
 	print('Finished.')
+ 
