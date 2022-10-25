@@ -5,7 +5,7 @@ import mysql.connector
 conn = mysql.connector.connect(
     host='localhost',
     user='root',
-    passwd='timemachine'
+    passwd='PASSWORD'
 )
 #print the connection
 print(conn)
@@ -25,7 +25,7 @@ import mysql.connector
 conn = mysql.connector.connect(
     host='localhost',
     user='root',
-    passwd='timemachine',
+    passwd='PASSWORD',
     database='dbTest'
 )
 print(conn)
@@ -41,7 +41,7 @@ import mysql.connector
 conn = mysql.connector.connect(
     host='localhost',
     user='root',
-    passwd='timemachine',
+    passwd='PASSWORD',
     database='dbTest'
 )
 # we create a mycursor object using the conn.cursor()
@@ -62,7 +62,7 @@ import mysql.connector
 conn = mysql.connector.connect(
     host='localhost',
     user='root',
-    passwd='timemachine',
+    passwd='PASSWORD',
     database='dbTest'
 )
 # we create a mycursor object using the conn.cursor()
@@ -84,7 +84,7 @@ import mysql.connector
 conn = mysql.connector.connect(
     host='localhost',
     user='root',
-    passwd='timemachine',
+    passwd='PASSWORD',
     database='dbTest'
 )
 # we create a mycursor object using the conn.cursor()
@@ -111,7 +111,7 @@ import mysql.connector
 conn = mysql.connector.connect(
     host='localhost',
     user='root',
-    passwd='timemachine',
+    passwd='PASSWORD',
     database='dbTest'
 )
 mycursor = conn.cursor()
