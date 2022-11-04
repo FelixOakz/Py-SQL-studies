@@ -1,3 +1,8 @@
 import pywhatkit as zap
 
-zap.sendwhatmsg("+558481870533", "OLA TENHO INTERESSE", 19, 8)
+ent = str(input('Numero: '))
+num = '+5584'+ent
+msg = str(input('Msg a ser enviada: '))
+hr = int(input('Hora: '))
+min = int(input('Min: '))
+zap.sendwhatmsg(num, msg, hr, min)
