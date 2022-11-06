@@ -9,4 +9,20 @@ for i in range(1, 1001):
 
 print('process finished')
 
-def writer(msg):
+
+
+"""
+menu principal, ver pessoas cadastradas, cadastrar nova pessoa, sair
+cadastro com nome e idade
+defs: print linhas com texto dentro,
+listar gente
+menu
+adiconar gente
+"""
+
+def printar(text):
+	tam = len(text) + 4
+	print(f'{"-"*tam}\n  {text}\n{"-"*tam}')
+
+def
+
