@@ -1,14 +1,3 @@
-
-"""
-menu principal, ver pessoas cadastradas, cadastrar nova pessoa, sair
-cadastro com nome e idade
-defs: print linhas com texto dentro,
-listar gente
-menu
-adiconar gente
-"""
-
-
 def writing(nome, idade):
     import os
     filepath = os.path.abspath('cevdatabase.txt')
