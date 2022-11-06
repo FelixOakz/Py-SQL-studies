@@ -8,12 +8,14 @@ menu
 adiconar gente
 """
 
+
 def writing(nome, idade):
 	import os
 	filepath = os.path.abspath('/Py-SQL-studies/random/TextDatabase.txt')
 	file = open(filepath, 'a')
 	file.write(f'{nome}, {idade}')
 	file.close()
+
 
 def reading():
 	import os
@@ -26,11 +28,9 @@ def printar(text):
 	tam = len(text) + 4
 	print(f'{"-"*tam}\n  {text}\n{"-"*tam}')
 
+
 def separador(simb):
 	print(f'{simb}'*30)
-
-
-
 
 
 printar('MENU PRINCIPAL')
