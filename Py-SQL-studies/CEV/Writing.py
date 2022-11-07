@@ -23,22 +23,20 @@ def separador(simb):
     print(f'{simb}'*30)
 
 
-printar('     MENU PRINCIPAL')
-print('1 - Ver pessoas cadastradas')
-print('2 - Cadastrar nova pessoa')
-print('3 - Sair do sistema')
-while True:
-    option = int(input('Escolha opcao: '))
-    if option == 1:
-        reading()
-  
-    elif option == 2:
-        nome = str(input('Digite o nome: ')).strip().capitalize()
-        idade = int(input('Digite a idade: '))
-        writing(nome, idade)
+if __name__ == '__main__':
+    while True:
+        option = input('Escolha opcao: ')
+        if option == '1':
+            reading()
     
-    elif option == 3:
-        printar('Saindo do sistema....')
-        break
-    else:
-        print('Escolha uma opcao adequada!')
+        elif option == '2':
+            nome = str(input('Digite o nome: ')).strip().capitalize()
+            idade = int(input('Digite a idade: '))
+            writing(nome, idade)
+        
+        elif option == '3':
+            printar('Saindo do sistema....')
+            break
+        else:
+            print('\033[0;31mEscolha uma opcao adequada!\033[m')
+        

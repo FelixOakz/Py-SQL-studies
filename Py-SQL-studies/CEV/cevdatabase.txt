@@ -3,3 +3,5 @@ maria, 30
 bia, 13
 Ramon, 35
 Micharley, 50
+Wilma, 51
+Bob, 45
