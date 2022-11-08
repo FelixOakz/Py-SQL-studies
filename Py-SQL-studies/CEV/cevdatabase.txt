@@ -1,7 +1,8 @@
-felix, 32
-maria, 30
-bia, 13
+Felix, 32
+Maria, 30
+Bia, 13
 Ramon, 35
 Micharley, 50
 Wilma, 51
 Bob, 45
+Jose, 67

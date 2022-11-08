@@ -1,6 +1,6 @@
 def writing(nome, idade):
     import os
-    filepath = os.path.abspath('cevdatabase.txt')
+    filepath = os.path.abspath('CEV/cevdatabase.txt')
     file = open(filepath, 'a')
     file.write(f'\n{nome}, {idade}')
     file.close() 
@@ -8,7 +8,7 @@ def writing(nome, idade):
 
 def reading():
     import os
-    filepath = os.path.abspath('cevdatabase.txt')
+    filepath = os.path.abspath('CEV/cevdatabase.txt')
     file = open(filepath, 'r')
     print(file.read())
 
@@ -39,4 +39,5 @@ if __name__ == '__main__':
             break
         else:
             print('\033[0;31mEscolha uma opcao adequada!\033[m')
+
         
