@@ -20,9 +20,22 @@ def reading():
         print('\033[0;31mFile not found or path is incorrect!\033[m\n')
 
 
+def reading_csv():
+    import csv
+    data = []
+    filename = 'cevdatabase.csv'
+    with open(filename) as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            row["nome"] = int(row["idade"])
+            data.append(row)
+            print(data)
+
+
 
 def line(tam = 42):
     return '-'* tam
+
 
 def header(txt):
     print(line())
@@ -39,7 +52,7 @@ if __name__ == '__main__':
         option = input('Escolha opcao: ')
         if option == '1':
             header('Lista de nomes:')
-            reading()
+            reading_csv()
 
         elif option == '2':
             header('cadastrar pessoa:')
