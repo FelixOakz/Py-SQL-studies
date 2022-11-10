@@ -20,6 +20,7 @@ def reading():
             print(f'{data[0]:<34}{data[1]:>3} anos')
     except IOError:
         print('\033[0;31m - Nao ha pessoas cadastradas!\033[m')
+        
 
 
 def line(tam = 42):
