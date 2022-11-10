@@ -21,10 +21,13 @@ def reading():
 
 
 
-def printar(text):
-    print('-'*30)
-    print(text.center(30))
-    print('-'*30)
+def line(tam = 42):
+    return '-'* tam
+
+def header(txt):
+    print(line())
+    print(txt.center(42))
+    print(line())
 
 
 def separador(simb):
@@ -35,16 +38,17 @@ if __name__ == '__main__':
     while True:
         option = input('Escolha opcao: ')
         if option == '1':
-            printar('Lista de nomes:')
+            header('Lista de nomes:')
             reading()
-    
+
         elif option == '2':
+            header('cadastrar pessoa:')
             nome = str(input('Digite o nome: ')).strip().capitalize()
             idade = int(input('Digite a idade: '))
             writing(nome, idade)
         
         elif option == '3':
-            printar('Saindo do sistema')
+            header('Saindo do sistema')
             break
         else:
             print('\033[0;31mEscolha uma opcao adequada!\033[m')
