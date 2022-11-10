@@ -1,7 +1,7 @@
 def writing(nome='desconhecido', idade=0):
     try:
         import os
-        filepath = os.path.abspath('cevdatabase.txt')
+        filepath = os.path.abspath('CEV/cevdatabase.txt')
         file = open(filepath, 'at')
         file.write(f'{nome},{idade}\n')
         file.close()
@@ -12,7 +12,7 @@ def writing(nome='desconhecido', idade=0):
 def reading():
     try:
         import os
-        filepath = os.path.abspath('cevdatabase.txt')
+        filepath = os.path.abspath('CEV/cevdatabase.txt')
         file = open(filepath, 'r+')
         for linha in file:
             data = linha.split(',')
