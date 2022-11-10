@@ -17,7 +17,7 @@ def reading():
         for linha in file:
             data = linha.split(',')
             data[1] = data[1].replace('\n', '')
-            print(f'{data[0]:<30}{data[1]:>3} anos')
+            print(f'{data[0]:<34}{data[1]:>3} anos')
         print(line())
     except IOError:
         print('\033[0;31mFile not found or path is incorrect!\033[m\n')
