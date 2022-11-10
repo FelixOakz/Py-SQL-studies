@@ -1,7 +1,7 @@
 def writing(nome, idade):
     try:
         import os
-        filepath = os.path.abspath('cevdatabase.csv')
+        filepath = os.path.abspath('cevdatabase.txt')
         file = open(filepath, 'a')
         file.write(f'\n{nome},{idade}')
         file.close()
@@ -12,10 +12,13 @@ def writing(nome, idade):
 def reading():
     try:
         import os
-        filepath = os.path.abspath('cevdatabase.csv')
+        filepath = os.path.abspath('cevdatabase.txt')
         file = open(filepath, 'r')
-        print(file.read())
-        print('-'*30)
+        for linha in file:
+            data = linha.split(',')
+            data[1] = data[1].replace('\n', '')
+            print(f'{data[0]:<30}{data[1]:>3} anos')
+        print(line())
     except IOError:
         print('\033[0;31mFile not found or path is incorrect!\033[m\n')
 
@@ -37,9 +40,9 @@ def separador(simb):
 if __name__ == '__main__':
     while True:
         option = input('Escolha opcao: ')
+        print(line())
         if option == '1':
-            header('Lista de nomes:')
-            reading_csv()
+            reading()
 
         elif option == '2':
             header('cadastrar pessoa:')

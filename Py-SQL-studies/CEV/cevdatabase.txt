@@ -1,4 +1,3 @@
-nome,idade
 Felix,32
 Maria,30
 Bia,13
@@ -13,3 +12,6 @@ Felipe,12
 Abelardo,32
 Josuel,46
 Carapaz,31
+Josefina,31
+Zenaide,58
+Bob,25
