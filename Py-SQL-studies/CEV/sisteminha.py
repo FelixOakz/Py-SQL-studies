@@ -3,7 +3,7 @@ def writing(nome, idade):
         import os
         filepath = os.path.abspath('cevdatabase.csv')
         file = open(filepath, 'a')
-        file.write(f'\n{nome}, {idade}')
+        file.write(f'\n{nome},{idade}')
         file.close()
     except IOError:
         print('\033[0;31mFile not found or path is incorrect!\033[m\n')
@@ -18,19 +18,6 @@ def reading():
         print('-'*30)
     except IOError:
         print('\033[0;31mFile not found or path is incorrect!\033[m\n')
-
-
-def reading_csv():
-    import csv
-    data = []
-    filename = 'cevdatabase.csv'
-    with open(filename) as file:
-        reader = csv.DictReader(file)
-        for row in reader:
-            row["nome"] = int(row["idade"])
-            data.append(row)
-            print(data)
-
 
 
 def line(tam = 42):
