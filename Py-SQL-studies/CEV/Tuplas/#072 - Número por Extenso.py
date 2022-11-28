@@ -7,9 +7,3 @@ while True:
 		break
 	print('Por favor, entre ZERO e VINTE!')
 print(f'Este valor por extenso eh {extenso[num]}')
-
-
-
-
-
-
