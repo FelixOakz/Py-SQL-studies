@@ -10,5 +10,5 @@ for i in range(1, 101):
     elif i % 5 == 0:
         print('Buzz')
         continue
-	else:
-		print(i)
+    else:
+        print(i)
