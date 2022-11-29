@@ -1,1 +1,0 @@
-print((loc + rot) % 25)
