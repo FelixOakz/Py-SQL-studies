@@ -1,4 +1,7 @@
 n = 9875987598759875
-n = str(n)
-strlist = [x for x in n]
 
+n = int(n)
+while n > 9:
+	n = sum(map(int, str(n)))
+
+print(n)
