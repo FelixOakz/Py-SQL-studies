@@ -11,5 +11,3 @@ for i in ar:
 		pair += 1
 	print(socks)
 print(pair)
-
-
