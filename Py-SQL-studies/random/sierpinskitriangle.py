@@ -22,4 +22,3 @@ def sierpinski(length, level):
 
 turtle.speed(0)
 sierpinski(200, 4)
-
