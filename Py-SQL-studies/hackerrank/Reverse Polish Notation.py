@@ -16,7 +16,3 @@ def rpn(case):
 			elif i == '/':
 				stack.append(n1 / n2)
 	return stack.pop()
-
-
-
-rpn(["2","1","+","3","*"])
