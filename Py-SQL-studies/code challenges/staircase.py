@@ -5,6 +5,7 @@ def staircase(n):
 		n -= 1
 		c += 1
 
+
 if __name__ == '__main__':
 	n = int(input().strip())
 
