@@ -13,4 +13,3 @@ scores.clear()
 scores.append(cmax)
 scores.append(cmin)
 print(scores)
-
