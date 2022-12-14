@@ -15,3 +15,4 @@ class Solution:
 			else:
 				stack.append(int(i))
 		return stack[0]
+
