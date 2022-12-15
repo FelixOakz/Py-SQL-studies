@@ -1,5 +1,8 @@
 arr = [[11, 2, 4], [4, 5, 6], [10, 8, -12]]
-
-d1 = arr[0][0] + arr[1][1] + arr[2][2]
-d2 = arr[0][2] + arr[1][1] + arr[2][0]
-print(abs(d1 - d2))
+n = 3
+primd = 0
+secd = 0
+for i in range(n):
+	primd += arr[i][i]
+	secd += arr[n - i - 1][i]
+print(abs(primd - secd))
