@@ -2,4 +2,8 @@ x = ['63', '25', '73', '1', '98', '73', '56', '84', '86', '57', '16', '83', '8',
 x = list(map(int, x))
 n = 100
 
-
+freq = []
+for i in range(0, len(x)):
+	c = x.count(i)
+	freq.append(c)
+print(freq)
