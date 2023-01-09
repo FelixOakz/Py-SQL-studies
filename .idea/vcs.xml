@@ -2,8 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Py-SQL-studies/cs50" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/WebProjects" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/WebProjects/JavaScript/Cheat-Sheet-Central" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Backend Studies/cs50s" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Frontend Studies" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Frontend Studies/JavaScript/Cheat-Sheet-Central" vcs="Git" />
   </component>
 </project>
